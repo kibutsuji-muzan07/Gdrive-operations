@@ -1,0 +1,3 @@
+configured_cred : creds.txt
+folder_name : Photos
+csv_file : links.csv
