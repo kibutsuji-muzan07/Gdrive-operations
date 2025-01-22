@@ -22,7 +22,7 @@ if __name__ == '__main__':
     pdf = str(sys.argv[3])
     path = str(sys.argv[4])
     config = open("config.yml")
-    parsed_config = yaml.load(config, Loader=yaml.FullLoader)
+    parsed_config = yaml.load(config, Loader=yaml.SafeLoader)
     csv_file = parsed_config['csv_file']
     folder_name = parsed_config['folder_name']
     cred = parsed_config['configured_cred']
